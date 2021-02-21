@@ -1,43 +1,29 @@
 import React from 'react';
+// import axios from 'axios';
 // import PropTypes from 'prop-types';
 
 class App extends React.Component{
-  constructor(props){
-    super(props);
-    console.log("im constructor");
-  };
-
   state = {
-    count : 0
+    isLoading : true
   };
-  add = () => {
-    // console.log("add");
-    this.setState(current => ({count : current.count +1 }));
-  }
-  minus = () => {
-    this.setState(current => ({count : current.count -1 }));
-  }
 
   componentDidMount(){
-    console.log("i'm mounted");
+    setTimeout(
+      () => {
+        this.setState({isLoading: false});
+        // this.setState(loading => {loading.isLoading = false})
+      }, 1000
+    );
   }
 
-  componentDidUpdate(){
-    console.log("i'm updated");
-  }
-
-  componentWillUnmount(){
-    console.log("bye");
-  }
-  
   render(){
-    console.log("i'm rendering");
+    const {isLoading} = this.state;
+    console.log("Rendering");
+    // console.log(isLoading);
+    // console.log(typeof(this.state));
     return (
     <div>
-      <h1>the number is : {this.state.count}</h1>
-      <button onClick = {this.add}>Add</button>
-      <button onClick = {this.minus}>Minus</button>
-
+      {isLoading ? "Loading..." : "we are ready"}
     </div>
     );
   }
