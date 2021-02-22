@@ -1,0 +1,58 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}    
+
+@font-face{
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat","Segoe UI", Roboto, Oxgen, Ubuntu,"Open Sans";
+    background-color: #eff3f7;
+    height: 100%; 
+    width: 100%;
+}
+
+html,
+body,
+#root,
+.container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lobster";
+    font-weight: 400;
+}
+
+.Movies{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-top: 70px;
+    width: 90%;
+    color: #adaeb9;
+    height: 100%;
+    
+    
+}
+
