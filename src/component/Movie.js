@@ -4,10 +4,11 @@ import {Link} from 'react-router-dom';
 
 import "../style/css/Movie.css";
 
-function Movie({ id ,title, year, summary, poster, genres}){
+function Movie({ id ,title, year, summary, poster, genres, yt_trailer_code}){
     return (
         <div className="movie">
         <img src={poster} alt={title} title={title}></img>
+        {/* {console.log(yt_trailer_code)} */}
         <div className="movie__data">
             <Link to={
                 {
@@ -17,7 +18,8 @@ function Movie({ id ,title, year, summary, poster, genres}){
                         year,
                         summary,
                         poster,
-                        genres
+                        genres,
+                        yt_trailer_code
                     }
                 }
             }>
@@ -44,7 +46,8 @@ Movie.prototype= {
     year : PropTypes.number.isRequired,
     summary: PropTypes.string.isRequired,
     poster: PropTypes.string.isRequired,
-    genres: PropTypes.arrayOf(string).isRequired
+    genres: PropTypes.arrayOf(string).isRequired,
+    yt_trailer_code : PropTypes.string.isRequired
 };
 
 export default Movie;

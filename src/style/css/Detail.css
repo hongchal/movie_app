@@ -1,0 +1,61 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf");
+}
+
+.Detail__Container{
+    position: relative;
+    z-index: -1;
+    /* opacity: 0.5; */
+    width: 100%;
+    background-color: #adaeb9;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Detail__Info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+    /* left: -70px; */
+    width: 50%; 
+    /* height: 70%; */
+    border-radius: 5%;
+    background-color: white;
+    opacity: 0.9;
+    align-items: center;
+    justify-items: center;
+    /* flex-wrap:nowrap; */
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.Detail__Title{
+    font-family: "Montserrat", "Lobster";
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+}
+
+.Detail__Summary{
+    margin: 10px 30px;    
+}
+
+.Detail__Video{
+    /* border: 1px solid black; */
+    margin: 10px 0;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+

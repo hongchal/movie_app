@@ -1,5 +1,5 @@
 // import { func } from 'prop-types';
-import react from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import "../style/css/Navigation.css"
 

@@ -28,6 +28,7 @@ class App extends React.Component{
         </div> 
         ):(
           <div className="Movies">
+            
             {movies.map(movie => (
               <Movie
                 key={movie.id}
@@ -37,6 +38,7 @@ class App extends React.Component{
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
                 genres={movie.genres}
+                yt_trailer_code={movie.yt_trailer_code}
               />
             ))}
           </div>
